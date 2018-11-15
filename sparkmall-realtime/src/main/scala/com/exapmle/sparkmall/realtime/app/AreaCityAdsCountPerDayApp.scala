@@ -27,14 +27,4 @@ object AreaCityAdsCountPerDayApp {
 
   }
 
-  def main(args: Array[String]): Unit = {
-    val stringToTuple = new mutable.HashMap[String,Long]()
-    stringToTuple.put("a",1)
-    stringToTuple.put("a",2)
-    stringToTuple.put("b",1)
-
-    stringToTuple.
-
-
-  }
 }
