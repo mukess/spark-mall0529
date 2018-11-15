@@ -17,7 +17,6 @@ object AdsCountPerHourApp {
       val hourMinu: String = new SimpleDateFormat("HH:mm").format(adslog.date)
       (adslog.adsId + "_" + hourMinu, 1L)
 
-
     }.reduceByKey(_ + _)
 
     val lastHourMinuteCountPerAdsDstream: DStream[(String, Iterable[(String, Long)])] = lastHourAdsMinuCountDstream.map { case (adsMinuKey, count) =>
