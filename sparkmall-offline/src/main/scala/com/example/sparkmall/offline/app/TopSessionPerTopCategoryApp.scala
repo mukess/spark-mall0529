@@ -1,6 +1,6 @@
 package com.example.sparkmall.offline.app
 
-import com.example.sparkmall.model.UserVisitAction
+import com.example.sparkmall.common.model.UserVisitAction
 import com.example.sparkmall.offline.resultmodel.{CatagoryTopN, TopSessionPerCid}
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.rdd.RDD

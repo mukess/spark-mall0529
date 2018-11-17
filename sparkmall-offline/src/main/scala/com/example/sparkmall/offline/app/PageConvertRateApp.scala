@@ -2,11 +2,11 @@ package com.example.sparkmall.offline.app
 
 import java.text.SimpleDateFormat
 
-import com.example.sparkmall.model.UserVisitAction
 import com.example.sparkmall.offline.resultmodel.PageConvertRate
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 import com.alibaba.fastjson.JSON
+import com.example.sparkmall.common.model.UserVisitAction
 import org.apache.spark.broadcast.Broadcast
 
 object PageConvertRateApp {

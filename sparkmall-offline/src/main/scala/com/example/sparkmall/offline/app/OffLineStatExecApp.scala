@@ -4,8 +4,8 @@ import java.text.SimpleDateFormat
 import java.util.{Date, UUID}
 
 import com.alibaba.fastjson.{JSON, JSONObject}
+import com.example.sparkmall.common.model.UserVisitAction
 import com.example.sparkmall.common.util.ConfigurationUtil
-import com.example.sparkmall.model.UserVisitAction
 import com.example.sparkmall.offline.resultmodel._
 import com.example.sparkmall.offline.util.SessionStatAccumulate
 import org.apache.spark.SparkConf

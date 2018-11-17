@@ -27,6 +27,7 @@ class UdfGroupbyCityCount extends UserDefinedAggregateFunction {
     val countSum: Long = buffer.getAs[Long](1)
     buffer(0) = countMap + (cityName -> (countMap.getOrElse(cityName, 0L) + 1L))
     buffer(1) = countSum + 1L
+    //buffer.update(0,countMap + (cityName -> (countMap.getOrElse(cityName, 0L) + 1L)))
   }
 
   override def merge(buffer1: MutableAggregationBuffer, buffer2: Row): Unit = {
